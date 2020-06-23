@@ -1,0 +1,58 @@
+<%- include('./partitials/header.ejs') %>
+
+<body>
+    <%- include('./partitials/navbar.ejs') %>
+
+
+    <div class="container">
+        <div class="card margemTopo">
+            <div class="card-header">
+                <h3>Enviar Horas Complementares</h3>
+            </div>
+
+            <div class="card-body">
+                <form method="post" action="/cadastrar">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Nome</label>
+                            <input type="text" class="form-control" name="nome">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Matrícula</label>
+                            <input type="number" class="form-control" name="matricula">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Curso</label>
+                            <select class="form-control" name="curso">
+                                <option selected>Escolha...</option>
+                                <option>Sistemas de Informação</option>
+                                <option>Direito</option>
+                                <option>Enfermagem</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Turma</label>
+                            <select class="form-control" name="turma">
+                                <option selected>Escolha...</option>
+                                <option>1º Período</option>
+                                <option>2º Período</option>
+                                <option>3º Período</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Horas a serem computadas</label>
+                            <input type="text" class="form-control" placeholder="ex: 8" name="horas">
+                        </div>
+                        <div class="form-group custom-file col-md-6">
+                            <input type="file" class="custom-file-input">
+                            <label class="custom-file-label" for="customFile">Escolha o arquivo</label>
+                        </div>
+                        <button type="submit" class="btn btn-light">Cancelar</button>
+                        <button type="submit" class="btn btn-dark">Enviar</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <%- include('./partitials/footer.ejs') %>
