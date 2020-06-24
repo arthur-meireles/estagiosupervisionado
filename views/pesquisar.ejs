@@ -1,0 +1,46 @@
+<%- include('./partitials/header.ejs') %>
+
+<body>
+  <%- include('./partitials/navbar.ejs') %>
+
+  <div class="container margemTopo">
+    <div class="card">
+      <div class="card-header">
+        <!-- Pesquisa -->
+        <form class="form-inline active-cyan-3 active-cyan-4">
+          <label> Pesquisa &nbsp;&nbsp;</label>
+          <br>
+          <i class="fas fa-search" aria-hidden="true"></i>
+          <input class="form-control w-75" type="text" placeholder="Digite aqui..." aria-label="Search">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="submit" class="btn btn-dark">Enviar</button>
+        </form>
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Matrícula</th>
+              <th scope="col">Curso</th>
+              <th scope="col">Turma</th>
+              <th scope="col">Horas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Joselito</td>
+              <td>0006577</td>
+              <td>Sistemas de Informação</td>
+              <td>7º Período</td>
+              <td>15h</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <%- include('./partitials/footer.ejs') %>
