@@ -9,7 +9,7 @@
          allowNull: false
      },
      matricula: {
-         type: Sequelize.INTEGER,
+         type: Sequelize.STRING,
          allowNull: false
      },
      curso: {
@@ -21,13 +21,15 @@
          allowNull: false
      },
      horas: {
-         type: Sequelize.INTEGER,
+         type: Sequelize.STRING,
          allowNull: false
-     }
+     },
  });
 
  Aluno.sync({
      force: false
  }).then(() => {
-     console.log("Tabela Aluno criada.")
+     console.log("Table Aluno created.")
  });
+
+ module.exports = Aluno;

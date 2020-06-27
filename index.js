@@ -4,7 +4,7 @@ const app = express();
 const porta = 3000;
 const bodyParser = require('body-parser');
 const connection = require('./database/database');
-const alunoModel = require('./database/Aluno')
+const Aluno = require('./database/Aluno')
 
 //Conexão
 connection.authenticate().then(() => {
@@ -44,24 +44,47 @@ app.post('/cadastrar', (req, res) => {
     var curso = req.body.curso;
     var turma = req.body.turma;
     var horas = req.body.horas;
-    var aluno = {
+    Aluno.create({
         nome,
         matricula,
         curso,
         turma,
         horas,
-    }
-    console.log(aluno)
-    res.redirect('/');
+    }).then(() => {
+        res.redirect('/pesquisar');
+    });
 
     //Tratar documento
 });
 
 //Pesquisar
 app.get('/pesquisar', (req, res) => {
-    res.render('pesquisar');
+    Aluno.findAll({
+        raw: true,
+        order: [
+            ['matricula', 'ASC'],
+        ]
+    }).then(alunos => {
+        res.render('pesquisar', {
+            alunos
+        })
+    });
 });
-app.post('/')
+
+app.get('/resultados', async (req, res) => {
+    var pesquisa = req.query.pesquisa;
+    console.log(pesquisa)
+    await Aluno.findAll({
+        raw: true,
+        where: {
+            matricula: pesquisa
+        }
+    }).then(resultados => {
+        res.render('resultados', {
+            resultados
+        })
+    });
+});
 
 //SERVIDOR
 app.listen(porta, () => {

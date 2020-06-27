@@ -8,7 +8,7 @@
       <div class="card-header">
 
         <!-- Pesquisa -->
-        <form class="form-inline active-cyan-3 active-cyan-4" method="get" action="/resultados">
+        <form class="form-inline active-cyan-3 active-cyan-4" method="GET" action="/resultados">
           <label> Pesquisa &nbsp;&nbsp;</label>
           <br>
           <i class="fas fa-search" aria-hidden="true"></i>
@@ -32,15 +32,15 @@
             </tr>
 
           </thead>
-          <% alunos.forEach(aluno => { %>
+          <% resultados.forEach(resultado => { %>
           <tbody>
             <tr>
-              <th scope="row"> <%= aluno.id%> </th>
-              <td><%= aluno.nome%></td>
-              <td><%= aluno.matricula%></td>
-              <td><%= aluno.curso%></td>
-              <td><%= aluno.turma%></td>
-              <td><%= aluno.horas%></td>
+              <th scope="row"> <%= resultado.id%> </th>
+              <td><%= resultado.nome%></td>
+              <td><%= resultado.matricula%></td>
+              <td><%= resultado.curso%></td>
+              <td><%= resultado.turma%></td>
+              <td><%= resultado.horas%></td>
             </tr>
           </tbody>
           <% }); %>
