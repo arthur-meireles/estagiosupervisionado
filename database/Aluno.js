@@ -24,6 +24,10 @@
          type: Sequelize.STRING,
          allowNull: false
      },
+     file: {
+         type: Sequelize.STRING,
+         allowNull: false
+     },
  });
 
  Aluno.sync({
