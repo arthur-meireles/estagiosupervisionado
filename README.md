@@ -69,22 +69,18 @@ O Guia Perguntas é um projeto estilo fórum de perguntas e respostas, criado ap
 <p><img src="http://g.recordit.co/raOi2Kl6e9.gif" alt="Recordit GIF" style="max-width:100%;"></p>
 <br>
 
-<p>Apos completar, dê "Next">"Next". Até chegar na tela abaixo:</p>
-<p><img src="http://g.recordit.co/raOi2Kl6e9.gif" alt="Recordit GIF" style="max-width:100%;"></p>
-<br>
-
 <p>Depois termine a instalação, utilizando a senha "12345678"</p>
 <p><img src="http://g.recordit.co/JIWaPJazRI.gif" alt="Recordit GIF" style="max-width:100%;"></p>
 <br>
 
-<p>Caso já possua o mysql com outra senha, altere no arquivo "database.js"</p>
+<p>Caso já possua o mysql com outra senha, ou deseje usar outra senha, altere no arquivo "database.js"</p>
 <p><img src="http://g.recordit.co/efu3uiCENV.gif" alt="Recordit GIF" style="max-width:100%;"></p>
 <br>
 
 <p>Eu utilizo o Mysql Workbench, se precisar baixe<a href="https://dev.mysql.com/downloads/workbench/"> aqui</a>.</p>
 <br>
 
-<p>Abra o MysqlWorkbench e crie o database "guiaperguntas"</p>
+<p>Abra o MysqlWorkbench e crie o database "horascomplementares"</p>
 <p><img src="http://g.recordit.co/XuKDqGacie.gif" alt="Recordit GIF" style="max-width:100%;"></p>
 <br>
 
