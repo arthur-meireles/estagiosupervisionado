@@ -4,9 +4,21 @@
     <%- include('./partitials/navbar.ejs') %>
     <div class="container margemTopo">
         <br>
-        <br>
-        <br>
-        <br>
-        <h1 class="text-center">Bem vindo(a) ao sistema de Horas Complementares</h1>
-    </div>
-    <%- include('./partitials/footer.ejs') %>
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="text-center uniceplac-text">Bem vindo(a) ao sistema de Horas Complementares</h1>
+                <br>
+                <a href="/pesquisar">
+                    <button type="button" class="btn dark btn-lg">Pesquisar Horas</button> &nbsp;
+                </a>
+                <a href="/cadastrar">
+                    <button type="button" class="btn dark btn-lg">Enviar Horas</button> &nbsp;
+                </a>
+                <br>
+                <br>
+                <img class="mx-auto d-block" src="img/home.png" width="310" height="270">
+            </div>
+
+
+        </div>
+        <%- include('./partitials/footer.ejs') %>

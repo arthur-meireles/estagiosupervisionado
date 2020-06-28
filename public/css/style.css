@@ -1,6 +1,43 @@
-body{
-    background-color: #eceff1;
+body {
+    font-family: sans-serif;
+    background-color: #bacfc8;
 }
-.margemTopo{
-    margin-top:5vh;
+
+.light{
+    color: #000;
+    background-color: #bacfc8
+}
+
+.dark{
+    color: #fff;
+    background-color: #2d7d67
+}
+
+.margemTopo {
+    margin-top: 5vh;
+}
+
+.uniceplac-nav {
+    color: #414348;
+    background-color: #2d7d67;
+}
+
+.uniceplac-text {
+    color: #414348;
+}
+
+.uniceplac-btn {
+    color: #FFF;
+    background-color: #2d7d67;
+}
+.uniceplac-btnPesquisa {
+    border-color: #fff;
+    color: #FFF;
+    background-color: #2d7d67;
+}
+
+
+.uniceplac-card-header {
+    color: #FFF;
+    background-color: #2d7d67;
 }
