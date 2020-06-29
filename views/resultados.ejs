@@ -14,7 +14,7 @@
           <i class="fas fa-search" aria-hidden="true"></i>
           <input class="form-control w-75" type="text" placeholder="Digite aqui..." name="pesquisa">
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <button type="submit" class="btn uniceplac-btnPesquisa">Enviar</button>
+          <button type="submit" class="btn uniceplac-btnPesquisa">Pesquisar</button>
         </form>
       </div>
       <div class="card-body">
@@ -28,6 +28,7 @@
               <th scope="col">Curso</th>
               <th scope="col">Turma</th>
               <th scope="col">Horas</th>
+              <th scope="col">Documentos</th>
             </tr>
 
           </thead>
@@ -39,6 +40,13 @@
               <td><%= resultado.curso%></td>
               <td><%= resultado.turma%></td>
               <td><%= resultado.horas%></td>
+              <td>
+                <form method="get" action="/baixar">
+                  <button class="btn uniceplac-btnPesquisa" name="path" type="submit" value="<%= resultado.file%>">
+                    Baixar
+                  </button>
+                </form>
+              </td>
             </tr>
           </tbody>
           <% }); %>

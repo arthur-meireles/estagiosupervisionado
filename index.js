@@ -7,7 +7,7 @@ const multer = require('multer');
 const connection = require('./database/database');
 const Aluno = require('./database/Aluno')
 const uploadsPath = 'uploads/';
-var download = require('download-file')
+const path = require('path')
 
 //Conexão
 connection.authenticate().then(() => {
@@ -32,18 +32,13 @@ const storage = multer.diskStorage({
         cb(null, uploadsPath);
     },
     filename: (req, file, cb) => {
-        cb(null, file.originalname);
+        cb(null, Date.now() + path.extname(file.originalname));
     }
 });
 
 const upload = multer({
     storage
 });
-
-//Configurando opções de download
-var options = {
-    directory: uploadsPath,
-}
 
 
 //ROTAS
@@ -66,7 +61,6 @@ app.post('/cadastrar', upload.single('file'), (req, res) => {
     var turma = req.body.turma;
     var horas = req.body.horas;
     var file = req.file.path;
-    console.log(file);
     Aluno.create({
         nome,
         matricula,
@@ -77,12 +71,7 @@ app.post('/cadastrar', upload.single('file'), (req, res) => {
     }).then(() => {
         res.redirect('/pesquisar');
     });
-});
 
-//Baixar arquivo
-app.get('/baixar', (req, res) => {
-    url = req.query.path;
-    res.download(url);
 });
 
 //Pesquisar
@@ -101,18 +90,25 @@ app.get('/pesquisar', (req, res) => {
 
 app.get('/resultados', async (req, res) => {
     var pesquisa = req.query.pesquisa;
-    console.log(pesquisa)
     await Aluno.findAll({
         raw: true,
         where: {
             matricula: pesquisa
-        }
+        },
     }).then(resultados => {
         res.render('resultados', {
             resultados
         })
     });
 });
+
+//Baixar arquivo
+app.get('/baixar', (req, res) => {
+    url = req.query.path;
+    res.download(url);
+});
+
+
 
 //SERVIDOR
 app.listen(porta, () => {
