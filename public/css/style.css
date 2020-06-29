@@ -3,12 +3,12 @@ body {
     background-color: #bacfc8;
 }
 
-.light{
+.light {
     color: #000;
     background-color: #bacfc8
 }
 
-.dark{
+.dark {
     color: #fff;
     background-color: #2d7d67
 }
@@ -26,10 +26,15 @@ body {
     color: #414348;
 }
 
+.uniceplac-text-home {
+    color: #2d7d66;
+}
+
 .uniceplac-btn {
     color: #FFF;
     background-color: #2d7d67;
 }
+
 .uniceplac-btnPesquisa {
     border-color: #fff;
     color: #FFF;
@@ -41,3 +46,10 @@ body {
     color: #FFF;
     background-color: #2d7d67;
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
