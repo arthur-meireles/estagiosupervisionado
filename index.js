@@ -108,7 +108,10 @@ app.get('/baixar', (req, res) => {
     res.download(url);
 });
 
-
+//Rotas Invalidas
+app.get('*', (req, res) => {
+    res.render('404');
+})
 
 //SERVIDOR
 app.listen(porta, () => {
