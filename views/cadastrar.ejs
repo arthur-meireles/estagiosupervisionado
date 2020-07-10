@@ -19,7 +19,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label>Matrícula*</label>
-                            <input type="number" class="form-control" name="matricula" maxlength="7" required>
+                            <input type="text" maxlength="7" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 66'>
                         </div>
                         <div class="form-group col-md-6">
                             <label>Curso*</label>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label>Total de horas*</label>
-                            <input type="text" class="form-control" placeholder="ex: 8" name="horas" maxlength="3" required>
+                            <input type="text" maxlength="3" class="form-control" placeholder="ex: 8" onkeypress='return event.charCode >= 48 && event.charCode <= 66'>
                         </div>
                         <div class="form-group col-md-6">
                             <label>Enviar documentos*</label>
