@@ -6,19 +6,14 @@
   🚀 Horas Complementares
 </h4>
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Rocketseat/semana-omnistack-10">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/arthur-meireles/estagiosupervisionado">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Rocketseat/semana-omnistack-10">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/arthur-meireles/estagiosupervisionado">
   
-  <a href="https://github.com/Rocketseat/semana-omnistack-10/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Rocketseat/semana-omnistack-10">
+  <a href="https://github.com/arthur-meireles/estagiosupervisionado/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/arthur-meireles/estagiosupervisionado">
   </a>
 
-  <a href="https://github.com/Rocketseat/semana-omnistack-10/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/Rocketseat/semana-omnistack-10">
-  </a>
-
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
 
 <p align="center">
@@ -31,7 +26,7 @@
 <br>
 
 <p align="center">
-  <img alt="Frontend" src=".github/devradar.png" width="100%">
+  <img alt="Frontend" src=".github/EstagioSupervisionado.png" width="100%">
 </p>
 
 ## :rocket: Tecnologias
@@ -48,15 +43,6 @@ O Projeto de Horas complementares foi desenvolvido para gerenciar as atividades 
 
 O layout foi desenvolvido em bootstrap.
 
-## 🤔 Como contribuir
-
-- Faça um fork desse repositório;
-- Cria uma branch com a sua feature: `git checkout -b minha-feature`;
-- Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
-- Faça push para a sua branch: `git push origin minha-feature`.
-
-Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
-
 ---
 
-Feito com ♥ by LambdaCorp :wave:
+Feito com ♥ by ME :wave:
