@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="https://uniceplac.com.br/storage/marca/HvUByQdZzFFM4QBYYCXkVMkmdZMN5tIn98iqNgLf.png" width="250px" />
+    <img src=".github/InstituteLogo.png" width="250px" />
 </h1>
 
 <h4 align="center">
@@ -20,7 +20,6 @@
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
@@ -34,6 +33,8 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Node.js](https://nodejs.org/pt-br/docs/)
+- [Express.js](https://expressjs.com/pt-br/)
+- [Mysql](https://dev.mysql.com/doc/)
 
 ## 💻 Projeto
 
