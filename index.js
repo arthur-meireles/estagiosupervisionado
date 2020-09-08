@@ -1,7 +1,6 @@
 //IMPORTS
 const express = require('express');
 const app = express();
-const porta = 3000;
 const bodyParser = require('body-parser');
 const multer = require('multer');
 const connection = require('./database/database');
@@ -115,5 +114,5 @@ app.get('*', (req, res) => {
 
 //SERVIDOR
 app.listen(porta, () => {
-    console.log('Servidor on na porta:' + porta);
+    console.log('Servidor on na porta:' + 3000);
 });
